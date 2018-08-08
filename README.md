@@ -13,3 +13,6 @@ Simply run the `linear_regression.py` file using Python
 python linear_regression.py
 ```
 The output will look like this
+![image](https://github.com/cjchengusc/linear_regression/blob/master/linear_regression_convergent.png)
+![image](https://github.com/cjchengusc/linear_regression/blob/master/linear_regression_information.png)
+
