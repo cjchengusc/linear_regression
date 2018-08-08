@@ -13,6 +13,28 @@ Simply run the `linear_regression.py` file using Python
 python linear_regression.py
 ```
 The output will look like this
+```
+......
+========================================
+iteration_count =  3998
+cost_function =  6.37708837651
+theta =  [[0.020515526218523258]
+ [1.069225545291617]]
+========================================
+iteration_count =  3999
+cost_function =  6.37708716933
+theta =  [[0.02051662488932839]
+ [1.069225535547381]]
+========================================
+iteration_count =  4000
+cost_function =  6.37708596216
+theta =  [[0.020517723559517188]
+ [1.0692255257807557]]
+========================================
+Learning rate =  1e-06
+Final theta =  [[0.020517723559517188]
+ [1.0692255257807557]]
+========================================
+```
 ![image](https://github.com/cjchengusc/linear_regression/blob/master/linear_regression_convergent.png)
-![image](https://github.com/cjchengusc/linear_regression/blob/master/linear_regression_information.png)
 
