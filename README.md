@@ -61,7 +61,7 @@ Final theta =  [[0.020517723559517188]
 ![image](https://github.com/cjchengusc/linear_regression/blob/master/linear_regression_convergent.png)
 
 Learning rate alpha and number of total iterations can be set in `Main function` in the `linear_regression.py` file. 
-python```
+```python
 # Main function
 plt.figure()
 L = linear_random_number_generator(number_of_training_examples=100, number_of_features=2)
@@ -72,3 +72,6 @@ P = plot_hypothesis_and_linear_random_number(x=input_x, y=output_y, theta=final_
 P.plot_hypothesis_and_linear_random_number_method()
 plt.show()
 ```
+
+## Reference
+Andrew Ng, [Machine Learning](https://www.coursera.org/learn/machine-learning), Stanford University Coursera
