@@ -23,7 +23,7 @@ class gradient_descent_algorithm:
         cost_function = squared_error_sum / (2 * m)
         return cost_function
 
-    def gradient_descent(self,object):
+    def gradient_descent(self):
         n = self.x.shape[0]    # n represents number of features. Amount of rows in matrix x is passed to n. 
         m = self.x.shape[1]    # m represents number of training examples. Amount of columns in matrix x is passed to m. 
         iteration_count = 0
@@ -35,7 +35,7 @@ class gradient_descent_algorithm:
         cost_function_vs_iteration_count_plot.set_xlabel('Iterations of gradient descent')
         cost_function_vs_iteration_count_plot.set_ylabel(r'Cost function J($\Theta$)')
         for iteration in range(0,self.total_iteration):
-            cost_function = object.get_cost_function(theta)
+            cost_function = self.get_cost_function(theta)
             partial_derivative_of_squared_error_sum = np.matrix([[None]]*n)
             for nn in range(0,n):
                 partial_derivative_of_squared_error_sum[nn,0] = 0
@@ -97,7 +97,7 @@ plt.figure()
 L = linear_random_number_generator(number_of_training_examples=100, number_of_features=2)
 input_x, output_y = L.linear_random_number_generator_method()
 G = gradient_descent_algorithm(x=input_x, y=output_y, alpha=0.000001, total_iteration=4000)
-final_theta = G.gradient_descent(G)
+final_theta = G.gradient_descent()
 P = plot_hypothesis_and_linear_random_number(x=input_x, y=output_y, theta=final_theta)
 P.plot_hypothesis_and_linear_random_number_method()
 plt.show()
